@@ -208,6 +208,10 @@ Credit goes to CSS Wrokshop http://css-workshop.com/css-ul-custom-bullet-style-w
     justify-self: center;
     margin-right: 2em;
   }
+    .footer-left {
+    grid-area: left;
+    justify-self: center;
+  }
   #search-bar {
     width: auto;
   }
