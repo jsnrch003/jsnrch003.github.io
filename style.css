@@ -90,6 +90,11 @@ input {
   background-size: 15PX;
   background-position: 15px;
 }
+#placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 /* 
 Following is for the carbon neutral icon placement. Not my own. 
