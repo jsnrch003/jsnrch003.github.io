@@ -203,14 +203,18 @@ Credit goes to CSS Wrokshop http://css-workshop.com/css-ul-custom-bullet-style-w
       "left"
       "right";
   }
+  .footer-center {
+    grid-area: center;
+    justify-self: center;
+  }
+  .footer-left {
+    grid-area: left;
+    justify-self: center;
+  }
   .footer-right {
     grid-area: right;
     justify-self: center;
     margin-right: 2em;
-  }
-    .footer-left {
-    grid-area: left;
-    justify-self: flex-end;
   }
   #search-bar {
     width: auto;
