@@ -210,7 +210,7 @@ Credit goes to CSS Wrokshop http://css-workshop.com/css-ul-custom-bullet-style-w
   }
     .footer-left {
     grid-area: left;
-    justify-self: center;
+    justify-self: flex-end;
   }
   #search-bar {
     width: auto;
