@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5em;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+img#logo {
+  width: 300px;
+}
+
+#apps-icon {
+  width: 1rem;
+}
+
+/* wrappers */
+
+.body-wrapper {
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto 1fr auto;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.nav-right {
+  margin-right: .5em;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 20vh;
+  width: 100vw;
+  height: fit-content;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  margin: 2em 0 0.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.search-lucky {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-left {
+  background-color: #f3f3f3;
+  color: #6f6f6f;
+}
+
+.footer-center {
+  background-color: #f3f3f3;
+  color: #6f6f6f;
+}
+
+.footer-right {
+  background-color: #f3f3f3;
+  color: #6f6f6f;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+}
+
+li {
+  padding: 0 1em;
+}
+
+#nav-left>li {
+  padding: .25em .25em 0 1.25em;
+}
+
+#nav-right>li {
+  padding: .5em .5em 0 1em;
+  font-size: smaller;
+}
+
+#sign-in-button {
+  background-color: #4585ee;
+  color: white;
+  font-weight: 800;
+  padding: .5em 1em;
+  border-radius: 4px;
+}
+
+input {
+  background: url("images/search-icon.png") no-repeat;
+  background-size: 15PX;
+  background-position: 15px;
+}
+
+#search-bar {
+  border: 1px solid #d1d1d193;
+  border-radius: 50px;
+  padding: 1rem;
+  margin: 0 0 1.5em;
+  max-width: 35rem;
+  width: 100vw;
+}
+
+button {
+  border-width: inherit;
+  padding: .75rem 1rem;
+  letter-spacing: .25px;
+}
+
+.main-buttons {
+  margin: 0 .5rem;
+  background-color: #f2f2f2;
+  color: #444444;
+  border-width: inherit;
+  padding: .75em 1.25em;
+  letter-spacing: .75px;
+}
+
+/* 
+Following is for the carbon neutral icon placement. Not my own. 
+Credit goes to CSS Wrokshop http://css-workshop.com/css-ul-custom-bullet-style-with-image/   
+*/
+
+#footer-center li {
+  position: relative;
+  padding-left: 20px;
+}
+
+#footer-center li::before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-image: url("images/carbon-icon.png");
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* end icon placement */
+
+.footer-wrapper {
+  display: grid;
+  justify-content: stretch;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: "left center right";
+}
+
+.footer-left {
+  grid-area: left;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 2em;
+}
+
+.footer-center {
+  grid-area: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-right {
+  grid-area: right;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2em;
+}
+
+/* media queries */
+
+@media (max-width: 1200px) {
+  .footer-wrapper {
+    display: grid;
+    align-items: flex-end;
+    grid-template-areas: "center center center" "left left right";
+  }
+}
+
+@media (max-width: 642px) {
+  .body-wrapper {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: auto;
+    grid-template-areas: "nav-wrapper" "main-wrapper" "footer-wrapper";
+  }
+  .footer-wrapper {
+    display: grid;
+    width: 100vw;
+    grid-template-columns: auto;
+    grid-template-areas: "center" "left" "right";
+  }
+  .footer-left {
+    justify-content: center;
+    padding: 0;
+  }
+  .footer-center {
+    grid-area: center;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-right {
+    grid-area: right;
+    display: flex;
+    justify-content: center;
+  }
+}
