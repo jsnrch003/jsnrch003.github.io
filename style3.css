@@ -244,7 +244,7 @@ Credit goes to CSS Wrokshop http://css-workshop.com/css-ul-custom-bullet-style-w
 }
 
 @media (max-width: 372px) {
-  body {
+  .body-wrapper {
     font-size: smaller;
   }
 }
