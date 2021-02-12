@@ -122,7 +122,7 @@ li {
 }
 
 input {
-  background: url("https://github.com/jsnrch003/jsnrch003.github.io/blob/master/search-icon.png") no-repeat;
+  background: url("/jsnrch003.github.io/search-icon.png") no-repeat;
   background-size: 15PX;
   background-position: 15px;
 }
@@ -166,7 +166,7 @@ Credit goes to CSS Wrokshop http://css-workshop.com/css-ul-custom-bullet-style-w
   width: 20px;
   height: 20px;
   position: absolute;
-  background-image: url("https://github.com/jsnrch003/jsnrch003.github.io/blob/master/carbon-icon.png");
+  background-image: url("/jsnrch003.github.io/carbon-icon.png");
   background-size: cover;
   background-position: center;
   left: 0;
