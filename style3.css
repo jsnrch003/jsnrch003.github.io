@@ -215,18 +215,13 @@ Credit goes to CSS Wrokshop http://css-workshop.com/css-ul-custom-bullet-style-w
 }
 
 @media (max-width: 642px) {
-  .nav-wrapper {
-    font-size: smaller;
-  }
   .body-wrapper {
-    font-size: smaller;
     display: grid;
     grid-template-rows: auto 1fr auto;
     grid-template-columns: auto;
     grid-template-areas: "nav-wrapper" "main-wrapper" "footer-wrapper";
   }
   .footer-wrapper {
-    font-size: smaller;
     display: grid;
     width: 100vw;
     grid-template-columns: auto;
@@ -245,5 +240,11 @@ Credit goes to CSS Wrokshop http://css-workshop.com/css-ul-custom-bullet-style-w
     grid-area: right;
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (max-width: 372px) {
+  body {
+    font-size: smaller;
   }
 }
