@@ -248,6 +248,6 @@ Credit goes to CSS Wrokshop http://css-workshop.com/css-ul-custom-bullet-style-w
     font-size: smaller;
   }
   .nav-right {
-    margin-right: 0;
+    margin-right: 5px;
   }
 }
