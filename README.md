@@ -10,4 +10,4 @@ My goal is to make a career change in the next year after getting some projects 
 
 Wish me luck!
 
-Live Preview of my Odin Project Google home page clone [here](https://jsnrch003.github.io/my-odinproject-google-page/).
+Live Preview of my Odin Project responsive Google home page clone [here](https://jsnrch003.github.io/my-odinproject-google-page/).
